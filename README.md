@@ -1,2 +1,2 @@
 # first_demo
-Author=Taukir Sumer
+Author=Taukir Sumer(Dev)
