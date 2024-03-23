@@ -1,18 +1,126 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Push</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>House Plan</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .house {
+      width: 800px;
+      height: 400px;
+      background-color: #fcf8e8;
+      border: 4px solid #574038;
+      position: relative;
+    }
+
+    .hall {
+      width: 50%;
+      height: 100%;
+      float: left;
+      border-right: 4px solid #574038;
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    .kitchen {
+      width: 40%;
+      height: 60%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      border: 4px solid #574038;
+      box-sizing: border-box;
+      background-color: #dcdcdc;
+      color: #574038;
+      text-align: center;
+      line-height: 120px;
+      font-weight: bold;
+    }
+
+    .washroom {
+      width: 40%;
+      height: 40%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border: 4px solid #574038;
+      box-sizing: border-box;
+      background-color: #dcdcdc;
+      color: #574038;
+      text-align: center;
+      line-height: 80px;
+      font-weight: bold;
+    }
+
+    .stairs {
+      width: 20%;
+      height: 100%;
+      float: right;
+      border-left: 4px solid #574038;
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    .bedroom {
+      width: calc(100% - 400px);
+      height: calc(100% - 8px);
+      background-color: #dcdcdc;
+      border: 4px solid #574038;
+      box-sizing: border-box;
+      position: absolute;
+      top: 0;
+      left: 400px;
+      color: #574038;
+      text-align: center;
+      line-height: 360px;
+      font-weight: bold;
+    }
+
+    .ventilation {
+      width: 50px;
+      height: 50px;
+      border: 4px solid #574038;
+      border-radius: 50%;
+      position: absolute;
+      top: -25px;
+      right: -25px;
+      background-color: #dcdcdc;
+    }
+
+    .measurements {
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #574038;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-    <H1>First push Successfull</H1>
-    <BUtton>Click to check</BUtton>
-    <H1>New branch created</H1>
-    <h1>Third branch added
-        <h1>New</h1>
-        <h1>New</h1>
-    </h1>
-
+  <div class="house">
+    <div class="hall">
+      <div class="kitchen">Kitchen<br>(13ft x 20ft)</div>
+      <div class="washroom">Washroom<br>(13ft x 10ft)</div>
+    </div>
+    <div class="stairs">
+      <div class="ventilation"></div>
+      <div class="measurements">Stairs</div>
+    </div>
+    <div class="bedroom">Bedroom<br>(26ft x 33ft)</div>
+    <div class="measurements">Outer Dimensions<br>(16ft x 32ft)</div>
+  </div>
 </body>
 </html>
+
